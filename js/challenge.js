@@ -1,10 +1,11 @@
+
 let playing = true;
 let interval;
 
 const timer = () => setInterval(() => {
     const counter = document.getElementById("counter");
     let count = parseInt(counter.innerText);
-    counter.innerText = count + 1;
+    counter.innerText = count += 1;
 }, 1000);
 
 interval = timer();
